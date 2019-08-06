@@ -1,0 +1,17 @@
+kafka:
+  bootstrapAddress: localhost:9092
+  topic:
+    in: onstar-profile
+    out: data-out
+
+
+websocket:
+  messages:
+    in: /dashboard/stream-in
+    out: /dashboard/stream-out
+  broker: /dashboard
+  prefix: /app
+  endpoint: /jdisp-websocket-endpoint
+
+server:
+  port : 8081
